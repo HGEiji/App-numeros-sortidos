@@ -1,0 +1,52 @@
+// puxar os 10 primeiros
+base.head(10)
+
+// puxar os 10 ultimos
+base.tail(10)
+
+// Consultar estatística descritiva
+base.describe()
+
+// Checar as linhas que estão nulas
+base[base["nome da coluna"].isna()]
+
+// Filtro de comparação
+base[base["nome da coluna"] <0]
+
+// Comparativo de duas colunas
+base[base["nome da coluna"] < base["nome segunda coluna"]]
+
+// Exibir colunas do arquivo
+colunas = base.columns
+
+// Filtra sem repetição de dados
+list_alim = set(base["nome da coluna"])
+print(list_alim)
+
+// 
+expec = base["nome da culuna"].tolist()
+print(expec.sort)
+
+// Mostra todas as linhas em que algum dado seja null
+base[base.isnull().any(axis = 1)]
+
+---------------------------------------------Gráfico ---------------------------------------
+// Setar tamanho
+plt.figure(figsize=(8,6))
+
+// Setar informação que será inserida (ordenada)
+plt.boxplot(lista_expectativas)
+
+// Nome da gráfico cartesiano
+plt.title('Expectativa de Vida')
+
+// Define o nome do eixo
+plt.ylabel('Valores')
+
+// Plota a gráfico cartesiano
+plt.show()
+
+// Setar gráfico de barras
+grafico = sns.countplot(x=base['nome da coluna'],)
+grafico.figure.set_size_inches(30, 5) // Ajusta largura
+grafico.set_xticklabes(grafico.get_xticklabels(),fontdict = {'fontsize':10,'fontweigth': 'bold', 'fontfamily': 'serif'}) // Ajusta titulos

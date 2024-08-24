@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Strings  -->
+
+    <string name="appTitulo">Número Sortido</string>
+    <string name="textoResultado">---</string>
+    <string name="btnSet">Gerar</string>
+    <string name="btnReset">Limpar</string>
+
+<!-- CORES -->
+
+    <color name="appBack">#050505</color>
+    <color name="btnColor">#227634</color>
+    <color name="fontColor">#FFE500</color>
+
+</resources>
